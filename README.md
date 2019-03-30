@@ -13,9 +13,11 @@ Shakespeare has been getting a lot of reviews recently about his plays. So far h
     - Contains Header, Footer, and View child components
     - View child component handles routing with react-router
 - **ReviewList**
-    - Consumes the API response below and maps over the array of reviews, rendering a ReviewCard component for each review.
-    - Contains ReviewCard, and ToolBar child components
+    - Displays a List of Reviews and a Toolbar for sorting and searching that list.
+    - Connects the sort/search options set in Toolbar to the List component
+    - Contains ReviewCard, List, and ToolBar child components
     - ReviewCard presents a single item of data passed through props
+    - List Consumes the API response below and maps over the array of reviews, rendering a ReviewCard component for each review.
     - Toolbar allows Search and Sort functionality
 - **ReviewPage**
     - Consumes an API response to render a single review.
