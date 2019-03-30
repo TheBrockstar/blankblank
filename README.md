@@ -4,6 +4,24 @@ It’s worth mentioning that we care about testing our code here at Podium, and 
 
 Shakespeare has been getting a lot of reviews recently about his plays. So far he has managed to build a backend API to serve them, but he doesn’t have the chops to finish out the UI. That’s where you come in, your task is to build a client side app for Shakespeare’s API. The **design** of the application is up to you.
 
+### Client Documentation
+
+**Components**
+
+- **App**
+    - Root parent component
+    - Contains Header, Footer, and View child components
+    - View child component handles routing with react-router
+- **ReviewList**
+    - Consumes the API response below and maps over the array of reviews, rendering a ReviewCard component for each review.
+    - Contains ReviewCard, and ToolBar child components
+    - ReviewCard presents a single item of data passed through props
+    - Toolbar allows Search and Sort functionality
+- **ReviewPage**
+    - Consumes an API response to render a single review.
+    - Contains no child components
+
+
 ### API Documentation
 
 **Authentication:**
