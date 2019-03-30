@@ -3,11 +3,13 @@ import { StyledHeader, HeaderWrapper } from './Styles';
 
 const Header = _ => {
   return (
-    <HeaderWrapper>
-      <StyledHeader>
+
+    <StyledHeader>
+      <HeaderWrapper>
         <h1>Shakespeare Reviews</h1>
-      </StyledHeader>
-    </HeaderWrapper>
+      </HeaderWrapper>
+    </StyledHeader>
+
   )
 }
 

@@ -3,11 +3,11 @@ import { StyledFooter, FooterWrapper } from './Styles';
 
 const Footer = _ => {
   return (
-    <FooterWrapper>
-      <StyledFooter>
-        This is a footer.
-      </StyledFooter>
-    </FooterWrapper>
+    <StyledFooter>
+      <FooterWrapper>
+          This is a footer.
+      </FooterWrapper>
+    </StyledFooter>
   )
 }
 
