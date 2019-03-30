@@ -9,11 +9,11 @@ import View from './View';
 class App extends Component {
   render() {
     return (
-      <div className="App">
-      <Header />
-      <View />
-      <Footer />
-      </div>
+      <>
+        <Header />
+        <View />
+        <Footer />
+      </>
     );
   }
 }
