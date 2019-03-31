@@ -1,6 +1,34 @@
 import styled from 'styled-components';
 import { flexContainer } from '../../globalStyles/Styles';
 
+
+// List Components
+export const ListContainer = styled.section`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+export const ListWrapper = styled(flexContainer)`
+  width: 100%;
+  max-width: 1080px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  @media only screen and (max-width: 850px) {
+    flex-direction: column;
+  }
+`;
+
+export const Loading = styled.h1`
+  font-size: 2rem;
+  margin-top: 10rem;
+  color: whitesmoke;
+`;
+
+
+// Card Components
 export const Card = styled.article`
   width: 48%;
   display: flex;
@@ -68,40 +96,19 @@ export const CardRating = styled(flexContainer)`
   }
 `;
 
-export const ListContainer = styled.section`
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`;
-
-export const ListWrapper = styled(flexContainer)`
-  width: 100%;
-  max-width: 1080px;
-  justify-content: space-around;
-  flex-wrap: wrap;
-
-  @media only screen and (max-width: 850px) {
-    flex-direction: column;
-  }
-`;
-
-export const Loading = styled.h1`
-  font-size: 2rem;
-  margin-top: 10rem;
-  color: whitesmoke;
-`;
-
-export const OuterStars = styled.div`
-`;
-
-export const InnerStars = styled.div`
+export const Stars = styled.div`
   font-size: .9rem;
   white-space: nowrap;
   overflow-x: hidden;
-  width: ${props => ((props.rating / 5) * 100) + "%"}
+  width: ${props => ((props.rating / 5) * 100) + "%"} // Calculates the number of stars to show.
+
+  @media only screen and (max-width: 450px) {
+    font-size: .7rem;
+  }
 `;
 
+
+// Toolbar Components
 export const ToolBarWrapper =  styled(flexContainer)`
   position: sticky;
   top: 1.5rem;
