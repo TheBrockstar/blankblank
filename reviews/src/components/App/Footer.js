@@ -5,7 +5,7 @@ const Footer = _ => {
   return (
     <StyledFooter>
       <FooterWrapper>
-          This is a footer.
+        <h1>© 1616 - The Bard of Avon</h1> 
       </FooterWrapper>
     </StyledFooter>
   )

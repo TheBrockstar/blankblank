@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
+
+import { ListWrapper } from './Styles';
 import ReviewCard from './ReviewCard';
 
 function List() {
@@ -17,15 +19,14 @@ function List() {
   }
 
   fetchReviews();
-
   }, []);
 
   return !reviews.length ? (<p>Loading...</p>) : (
-    <div>
+    <ListWrapper>
       {reviews.map(review => {
         return (<ReviewCard key={review.id} review={review}/>)
       })}
-    </div>
+    </ListWrapper>
   )
 }
 

@@ -1,11 +1,15 @@
 import React from 'react';
 
+import { Card } from './Styles';
+
 const ReviewCard = props => {
   return (
-  <article>
-    <h1>Author: { props.review.author }</h1>
+  <Card>
+    <h1>{ props.review.author }</h1>
+    <p>Rating: { props.review.rating }</p>
     <p>{ props.review.body }</p>
-  </article>
+    <p>Published on: { (new Date(props.review.publish_date)).toDateString() }</p>
+  </Card>
   )
 }
 
