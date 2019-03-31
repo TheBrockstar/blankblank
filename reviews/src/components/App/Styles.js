@@ -67,5 +67,5 @@ export const ViewWrapper = styled(flexContainer)`
 width: 100%;
 height: auto;
 align-items: flex-start;
-min-height: calc(100vh - 120px);
+min-height: calc(100vh - 155px);
 `

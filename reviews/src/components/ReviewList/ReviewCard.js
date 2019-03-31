@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Card, CardContent, CardRating, Stars } from './Styles';
+import { Card, CardContent, CardRating, Stars, Quote } from './Styles';
 
 const ReviewCard = props => {
   return (
@@ -13,7 +13,7 @@ const ReviewCard = props => {
     </CardRating>
     <CardContent>
       <h1>{ props.review.author }</h1>
-      <p>{ props.review.body }</p>
+      <Quote>{ props.review.body }</Quote>
       <p>{ (new Date(props.review.publish_date)).toDateString() }</p>
     </CardContent>
 

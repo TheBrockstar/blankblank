@@ -23,6 +23,13 @@ Shakespeare has been getting a lot of reviews recently about his plays. So far h
     - Consumes an API response to render a single review.
     - Contains no child components
 
+**Helper Functions**
+
+- **searchReviews(_array_ list, _string_ term)**
+    - Searches a list of reviews and returns a list of reviews whose author or body contains the a given search term.
+- **sortReviews(_array_ list, _string_ key, [_boolean_ asc])**
+    - Sorts a list of reviews by a given key, and orders the sort in ascending or descending order depending on the option asc parameter.
+    - Can sort by Number, Date, and String datatypes.
 
 ### API Documentation
 

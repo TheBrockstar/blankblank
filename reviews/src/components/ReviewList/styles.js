@@ -72,6 +72,10 @@ export const CardContent = styled(flexContainer)`
   }
 `;
 
+export const Quote = styled.p`
+  font-style: italic;
+`
+
 export const CardRating = styled(flexContainer)`
   width: 100px;
   flex-direction: column;
