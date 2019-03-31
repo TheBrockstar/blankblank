@@ -1,14 +1,20 @@
 import React from 'react';
 
-import { Card } from './Styles';
+import { Card, CardContent, CardRating } from './Styles';
 
 const ReviewCard = props => {
   return (
   <Card>
-    <h1>{ props.review.author }</h1>
-    <p>Rating: { props.review.rating }</p>
-    <p>{ props.review.body }</p>
-    <p>Published on: { (new Date(props.review.publish_date)).toDateString() }</p>
+    <CardRating>
+      <span>{ props.review.rating }</span>
+      <div>* * * * *</div>
+    </CardRating>
+    <CardContent>
+      <h1>{ props.review.author }</h1>
+      <p>{ props.review.body }</p>
+      <p>{ (new Date(props.review.publish_date)).toDateString() }</p>
+    </CardContent>
+
   </Card>
   )
 }
