@@ -1,11 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=La+Belle+Aurore');
-
 * {
   box-sizing: border-box;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'La Belle Aurore', cursive;
+}
+
+html {
+  font-size:16px
 }
 
 body {
@@ -15,7 +17,7 @@ body {
   color: #2a3439;
   background: url('../assets/background-main.jpg');
   background-attachment: fixed;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  font-family: "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;

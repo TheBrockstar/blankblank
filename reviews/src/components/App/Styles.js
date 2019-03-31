@@ -8,6 +8,7 @@ export const StyledHeader = styled.header `
   width: 100%;
   background-color: rgb(81, 197, 212);
   border-bottom: 5px solid rgb(105, 68, 37);
+  margin-bottom: 15px;
 
   h1 {
     font-size: 2.5rem;
@@ -65,5 +66,6 @@ max-width: 1080px;
 export const ViewWrapper = styled(flexContainer)`
 width: 100%;
 height: auto;
+align-items: flex-start;
 min-height: calc(100vh - 120px);
 `
