@@ -4,7 +4,7 @@ import { Card, CardContent, CardRating, Stars, Quote } from './Styles';
 
 const ReviewCard = props => {
   return (
-  <Card aria-role={'link'} onClick={_ => props.history.push(`/review/${props.review.id}`)}>
+  <Card role='link' onClick={_ => props.history.push(`/review/${props.review.id}`)}>
     <CardRating>
       <span>{ props.review.rating }</span>
       <div>

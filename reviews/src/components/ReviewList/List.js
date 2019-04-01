@@ -9,8 +9,6 @@ import ReviewCard from './ReviewCard';
 
 function List(props) {
 
-  console.log(props);
-
   const [reviews, setReviews] = useState(null);
 
   useEffect(() => {
@@ -33,7 +31,7 @@ function List(props) {
 
   if (reviews) {
     return reviews === '404' ? (<NotFound404>404 - Not Found <br/> Get Thee Hence!</NotFound404>) : (
-      <ListWrapper aria-role={'list'}>
+      <ListWrapper className="listWrapper" role='list'>
         {paginateReviews(sortReviews(searchReviews(reviews, props.searchTerm), props.sortBy, props.sortOrder), props.page, 20).map(review => {
           return (<ReviewCard history={props.history} key={review.id} review={review}/>)
         })}
