@@ -5,12 +5,12 @@ const ToolBar = props => {
 
   return (
       <ToolBarWrapper>
-        <PageButton flip={true} onClick={e => props.setPage(props.page > 1 ? props.page - 1 : 1)}>✒</PageButton>
+        <PageButton aria-label={"Previous"} flip={true} onClick={e => props.setPage(props.page > 1 ? props.page - 1 : 1)}>✒</PageButton>
         <StyledLabel>Search: 
           <StyledInput onChange={e => props.search(e.target.value)}/>
         </StyledLabel>
         <StyledLabel>
-          Pg.<PageNumber>{ props.page }</PageNumber>
+          Pg.<PageNumber aria-label={"Page Number"}>{ props.page }</PageNumber>
         </StyledLabel>
           <StyledLabel>
             Sort By: 
@@ -22,7 +22,7 @@ const ToolBar = props => {
             <SortButton order={ props.sortOrder } type={1} onClick={e => props.order(1)}>ASC</SortButton> / 
             <SortButton order={ props.sortOrder } type={0} onClick={e => props.order(0)}>DESC</SortButton>
           </StyledLabel>
-        <PageButton onClick={e => props.setPage(props.page + 1)}>✒</PageButton>
+        <PageButton aria-label={"Next"} onClick={e => props.setPage(props.page + 1)}>✒</PageButton>
       </ToolBarWrapper>
   )
 }
