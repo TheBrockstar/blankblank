@@ -3,33 +3,42 @@ import axios from 'axios';
 
 import { searchReviews, sortReviews, paginateReviews } from '../../helpers';
 
-
-import { ListWrapper, Loading } from './Styles';
+import { ListWrapper } from './Styles';
+import { Loading, NotFound404 } from '../../globalStyles/Styles'
 import ReviewCard from './ReviewCard';
 
 function List(props) {
-  const [reviews, setReviews] = useState([]);
+  const [reviews, setReviews] = useState(null);
 
   useEffect(() => {
   async function fetchReviews() {
-  const response = await axios(
-    'https://shakespeare.podium.com/api/reviews', 
-    { 'headers': { 'x-api-key':'H3TM28wjL8R4#HTnqk?c' }}
-    );
-
-    setReviews(response.data);
+    try {
+      const response = await axios(
+      'https://shakespeare.podium.com/api/reviews', 
+      { 'headers': { 'x-api-key':'H3TM28wjL8R4#HTnqk?c' }}
+      );
+  
+      setReviews(response.data);
+    } catch (error) {
+      setReviews('404');
+    }
   }
-
+  
   fetchReviews();
   }, []);
 
-  return !reviews.length ? (<Loading>Loading...</Loading>) : (
-    <ListWrapper>
-      {paginateReviews(sortReviews(searchReviews(reviews, props.searchTerm), props.sortBy, props.sortOrder), props.page, 20).map(review => {
-        return (<ReviewCard key={review.id} review={review}/>)
-      })}
-    </ListWrapper>
-  )
+  if (reviews) {
+    return reviews === '404' ? (<NotFound404>404 - Not Found <br/> Get Thee Hence!</NotFound404>) : (
+      <ListWrapper>
+        {paginateReviews(sortReviews(searchReviews(reviews, props.searchTerm), props.sortBy, props.sortOrder), props.page, 20).map(review => {
+          return (<ReviewCard key={review.id} review={review}/>)
+        })}
+      </ListWrapper>
+    )
+  } else {
+    return (<Loading>Loading...</Loading>)
+  }
+
 }
 
 export default List;

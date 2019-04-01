@@ -20,12 +20,18 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <ToolBar
+          order={[Function]}
+          page={1}
           search={[Function]}
+          setPage={[Function]}
           sort={[Function]}
+          sortOrder={0}
         />,
         <List
+          page={1}
           searchTerm=""
-          sortBy="author"
+          sortBy="rating"
+          sortOrder={0}
         />,
       ],
     },
@@ -36,8 +42,12 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
+          "order": [Function],
+          "page": 1,
           "search": [Function],
+          "setPage": [Function],
           "sort": [Function],
+          "sortOrder": 0,
         },
         "ref": null,
         "rendered": null,
@@ -48,8 +58,10 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
+          "page": 1,
           "searchTerm": "",
-          "sortBy": "author",
+          "sortBy": "rating",
+          "sortOrder": 0,
         },
         "ref": null,
         "rendered": null,
@@ -60,9 +72,9 @@ ShallowWrapper {
       "$$typeof": Symbol(react.forward_ref),
       "attrs": Array [],
       "componentStyle": ComponentStyle {
-        "componentId": "sc-bwzfXH",
+        "componentId": "sc-bxivhb",
         "isStatic": true,
-        "lastClassName": "jJqDKT",
+        "lastClassName": "dTphmB",
         "rules": Array [
           "
   width: 100%;
@@ -75,7 +87,7 @@ ShallowWrapper {
       "displayName": "styled.section",
       "foldedComponentIds": Array [],
       "render": [Function],
-      "styledComponentId": "sc-bwzfXH",
+      "styledComponentId": "sc-bxivhb",
       "target": "section",
       "toString": [Function],
       "warnTooManyClasses": [Function],
@@ -90,12 +102,18 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <ToolBar
+            order={[Function]}
+            page={1}
             search={[Function]}
+            setPage={[Function]}
             sort={[Function]}
+            sortOrder={0}
           />,
           <List
+            page={1}
             searchTerm=""
-            sortBy="author"
+            sortBy="rating"
+            sortOrder={0}
           />,
         ],
       },
@@ -106,8 +124,12 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
+            "order": [Function],
+            "page": 1,
             "search": [Function],
+            "setPage": [Function],
             "sort": [Function],
+            "sortOrder": 0,
           },
           "ref": null,
           "rendered": null,
@@ -118,8 +140,10 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
+            "page": 1,
             "searchTerm": "",
-            "sortBy": "author",
+            "sortBy": "rating",
+            "sortOrder": 0,
           },
           "ref": null,
           "rendered": null,
@@ -130,9 +154,9 @@ ShallowWrapper {
         "$$typeof": Symbol(react.forward_ref),
         "attrs": Array [],
         "componentStyle": ComponentStyle {
-          "componentId": "sc-bwzfXH",
+          "componentId": "sc-bxivhb",
           "isStatic": true,
-          "lastClassName": "jJqDKT",
+          "lastClassName": "dTphmB",
           "rules": Array [
             "
   width: 100%;
@@ -145,7 +169,7 @@ ShallowWrapper {
         "displayName": "styled.section",
         "foldedComponentIds": Array [],
         "render": [Function],
-        "styledComponentId": "sc-bwzfXH",
+        "styledComponentId": "sc-bxivhb",
         "target": "section",
         "toString": [Function],
         "warnTooManyClasses": [Function],

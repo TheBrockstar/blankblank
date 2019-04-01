@@ -21,12 +21,6 @@ export const ListWrapper = styled(flexContainer)`
   }
 `;
 
-export const Loading = styled.h1`
-  font-size: 2rem;
-  margin-top: 10rem;
-  color: whitesmoke;
-`;
-
 
 // Card Components
 export const Card = styled.article`
@@ -195,11 +189,11 @@ export const StyledLabel = styled.label`
   font-size: .8rem;
 
   @media only screen and (max-width: 700px) {
-    display: ${props => props.for === "sort" ? "none" : "flex" };
+    display: ${props => props.htmlFor === "sort" ? "none" : "flex" };
   }
 
   @media only screen and (max-width: 465px) {
-    display: ${props => props.for === "search" || props.for === "sort" ? "none" : "flex" };
+    display: ${props => props.htmlFor === "search" || props.for === "sort" ? "none" : "flex" };
   }
 `
 
