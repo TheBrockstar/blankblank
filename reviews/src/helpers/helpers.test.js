@@ -12,7 +12,7 @@ const mockReview2 = {
   rating: "3.1",
   publish_date: "2015-09-05T23:25:47.642350Z",
   id: "9793364045824",
-  body: "Can one desire too much of a good thing?.",
+  body: "Can one desire too much of a good fool?",
   author: "Fay Lemke"
 }
 
@@ -165,5 +165,15 @@ describe('paginateReviews', () => {
         });
       });
     });
+  });
+
+  describe('Integration', () => {
+    const mockList = [mockReview1, mockReview2, mockReview3, mockReview2, mockReview1, mockReview1];
+    const result = paginateReviews(sortReviews(searchReviews(mockList, 'fool'), 'rating', 0), 1, 20);
+     describe('Given an array of reviews, and passing it through sort, search, and pagination', () => {
+       it('returns the correct final array', () => {
+        expect(JSON.stringify(result)).toEqual(JSON.stringify([mockReview1, mockReview1, mockReview1, mockReview2, mockReview2]));
+       });
+     });
   });
 });
