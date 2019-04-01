@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
+import { searchReviews, sortReviews, paginateReviews } from '../../helpers';
+
 
 import { ListWrapper, Loading } from './Styles';
 import ReviewCard from './ReviewCard';
 
-function List() {
+function List(props) {
   const [reviews, setReviews] = useState([]);
 
   useEffect(() => {
@@ -23,7 +25,7 @@ function List() {
 
   return !reviews.length ? (<Loading>Loading...</Loading>) : (
     <ListWrapper>
-      {reviews.map(review => {
+      {paginateReviews(sortReviews(searchReviews(reviews, props.searchTerm), props.sortBy, props.sortOrder), props.page, 20).map(review => {
         return (<ReviewCard key={review.id} review={review}/>)
       })}
     </ListWrapper>

@@ -24,13 +24,13 @@ export const sortReviews = (reviews, key, asc = 0) => {
   if (Date.parse(sorted[0][key])) {
     sorted.forEach(review => {review[key] = new Date(review[key])});
   } else if (Number(sorted[0][key])) {
-    sorted.forEach(review => {review[key] = parseInt(review[key], 10)});
+    sorted.forEach(review => {review[key] = parseFloat(review[key], 10)});
   } else {
     sorted.forEach(review => {review[key] = review[key].toLowerCase()});
   }
 
   sorted.sort((ra, rb) => {
-    if (ra[key] > rb[key]) return 1;
+    if (ra[key] < rb[key]) return 1;
     return -1;
   })
 

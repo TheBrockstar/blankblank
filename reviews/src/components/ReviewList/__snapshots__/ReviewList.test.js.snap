@@ -19,8 +19,14 @@ ShallowWrapper {
     "nodeType": "function",
     "props": Object {
       "children": Array [
-        <ToolBar />,
-        <List />,
+        <ToolBar
+          search={[Function]}
+          sort={[Function]}
+        />,
+        <List
+          searchTerm=""
+          sortBy="author"
+        />,
       ],
     },
     "ref": null,
@@ -29,7 +35,10 @@ ShallowWrapper {
         "instance": null,
         "key": undefined,
         "nodeType": "function",
-        "props": Object {},
+        "props": Object {
+          "search": [Function],
+          "sort": [Function],
+        },
         "ref": null,
         "rendered": null,
         "type": [Function],
@@ -38,7 +47,10 @@ ShallowWrapper {
         "instance": null,
         "key": undefined,
         "nodeType": "function",
-        "props": Object {},
+        "props": Object {
+          "searchTerm": "",
+          "sortBy": "author",
+        },
         "ref": null,
         "rendered": null,
         "type": [Function],
@@ -77,8 +89,14 @@ ShallowWrapper {
       "nodeType": "function",
       "props": Object {
         "children": Array [
-          <ToolBar />,
-          <List />,
+          <ToolBar
+            search={[Function]}
+            sort={[Function]}
+          />,
+          <List
+            searchTerm=""
+            sortBy="author"
+          />,
         ],
       },
       "ref": null,
@@ -87,7 +105,10 @@ ShallowWrapper {
           "instance": null,
           "key": undefined,
           "nodeType": "function",
-          "props": Object {},
+          "props": Object {
+            "search": [Function],
+            "sort": [Function],
+          },
           "ref": null,
           "rendered": null,
           "type": [Function],
@@ -96,7 +117,10 @@ ShallowWrapper {
           "instance": null,
           "key": undefined,
           "nodeType": "function",
-          "props": Object {},
+          "props": Object {
+            "searchTerm": "",
+            "sortBy": "author",
+          },
           "ref": null,
           "rendered": null,
           "type": [Function],

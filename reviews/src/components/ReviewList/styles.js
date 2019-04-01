@@ -122,9 +122,42 @@ export const ToolBarWrapper =  styled(flexContainer)`
   height: 4rem;
   background-color: white;
   border-radius: 10px;
+  padding: 0 10px;
+  justify-content: space-between;
 `;
 
 export const StyledInput = styled.input`
   padding: 5px;
   border-radius: 5px;
+`
+
+export const StyledSelect = styled.select`
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+`
+
+export const SortButton = styled.button`
+  border: 0px;
+  background: none;
+  cursor: pointer;
+  font-weight: ${props => props.order === props.type ? "bold" : "normal"};
+`
+
+export const PageButton = styled.button`
+  border: 0px;
+  background: none;
+  cursor: pointer;
+  font-size: 3rem;
+  font-weight: "bold";
+  padding-bottom: 7px;
+  &:hover {
+    color: rgb(81, 197, 212);
+  }
+  ${props => props.flip ? "transform: scale(-1, 1);" : ""}
+`
+
+export const PageNumber = styled(flexContainer)`
+  font-size: 1rem;
+  padding: 10px
 `

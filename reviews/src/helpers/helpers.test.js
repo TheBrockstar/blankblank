@@ -1,4 +1,4 @@
-import { searchReviews, sortReviews, paginateReviews } from './index';
+import { searchReviews, sortReviews, paginateReviews } from '.';
 
 const mockReview1 = {
   rating: "4.2",
@@ -66,9 +66,9 @@ describe('sortReviews', () => {
   describe('given an array of reviews', () => {
 
     const mockList = [mockReview1, mockReview2, mockReview3, mockReview2, mockReview1, mockReview1];
-    const sortByRating = [mockReview3, mockReview2, mockReview2, mockReview1, mockReview1, mockReview1];
-    const sortByAuthor = [mockReview2, mockReview2, mockReview1, mockReview1, mockReview1, mockReview3];
-    const sortByDate = [mockReview2, mockReview2, mockReview1, mockReview1, mockReview1, mockReview3];
+    const sortByRating = [mockReview1, mockReview1, mockReview1, mockReview2, mockReview2, mockReview3];
+    const sortByAuthor = [mockReview3, mockReview1, mockReview1, mockReview1, mockReview2, mockReview2];
+    const sortByDate = [mockReview3, mockReview1, mockReview1, mockReview1, mockReview2, mockReview2];
 
   describe('and a key:', () => {
     describe('`rating`', () => {
