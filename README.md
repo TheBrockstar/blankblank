@@ -4,6 +4,52 @@ It’s worth mentioning that we care about testing our code here at Podium, and 
 
 Shakespeare has been getting a lot of reviews recently about his plays. So far he has managed to build a backend API to serve them, but he doesn’t have the chops to finish out the UI. That’s where you come in, your task is to build a client side app for Shakespeare’s API. The **design** of the application is up to you.
 
+### Client Documentation
+
+**Components**
+
+- **App**
+    - Root parent component
+    - Contains Header, Footer, and View child components
+    - View child component handles routing with react-router
+- **ReviewList**
+    - Displays a List of Reviews and a Toolbar for sorting and searching that list.
+    - Connects the sort/search options set in Toolbar to the List component
+    - Contains ReviewCard, List, and ToolBar child components
+    - ReviewCard presents a single item of data passed through props
+    - List Consumes the API response below and maps over the array of reviews, rendering a ReviewCard component for each review.
+    - Toolbar allows Search and Sort functionality
+- **ReviewPage**
+    - Consumes an API response to render a single review.
+    - Contains no child components
+
+**Helper Functions**
+
+
+- **searchReviews(_array_ reviews, _string_ term)**
+    - Searches a list of reviews and returns a list of reviews whose author or body contains the a given search term.
+- **sortReviews(_array_ reviews, _string_ key, ?[_boolean_ asc])**
+    - Sorts a list of reviews by a given key, and orders the sort in ascending or descending order depending on the option asc parameter.
+    - Can sort by Number, Date, and String datatypes.
+- **paginateReviews(_array_ reviews, _integer_ page, ?[_integer_ num])**
+    - Simulates pagination of a list of reviews by returning a slice of the list based on a provided page number and an optional number of reviews per page.
+
+**Styling**
+
+Styling is primarily implemented through styled-components, with a `Style.js` file housing the styled component for each parent component in that component's folder.
+
+Global styles are few and use both styled-components, and raw css. They are found in the "globalStyles" folder.
+
+This project uses the Eric Meyer CSS Reset. 
+
+**Testing**
+
+Tests are located with the units that they are most closely associated with. Each parent component has a [component name].test.js file.
+
+Helper functions, collectively, have their own test file at helpers.test.js in the helpers folder.
+
+Testing can be run with `yarn test` while inside the client folder "reviews"
+
 ### API Documentation
 
 **Authentication:**

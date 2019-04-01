@@ -1,0 +1,2669 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ReviewList List matches snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <List />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": "Loading...",
+    },
+    "ref": null,
+    "rendered": "Loading...",
+    "type": Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "sc-htpNat",
+        "isStatic": true,
+        "lastClassName": "bqVEJT",
+        "rules": Array [
+          "
+  font-size: 2rem;
+  margin-top: 10rem;
+  color: whitesmoke;
+",
+        ],
+      },
+      "displayName": "styled.h1",
+      "foldedComponentIds": Array [],
+      "render": [Function],
+      "styledComponentId": "sc-htpNat",
+      "target": "h1",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    },
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": "Loading...",
+      },
+      "ref": null,
+      "rendered": "Loading...",
+      "type": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-htpNat",
+          "isStatic": true,
+          "lastClassName": "bqVEJT",
+          "rules": Array [
+            "
+  font-size: 2rem;
+  margin-top: 10rem;
+  color: whitesmoke;
+",
+          ],
+        },
+        "displayName": "styled.h1",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-htpNat",
+        "target": "h1",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      },
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    "disableLifecycleMethods": true,
+  },
+}
+`;
+
+exports[`ReviewList ReviewCard matches snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ReviewCard
+    review={
+      Object {
+        "author": "Tatyana Olson",
+        "body": "How bitter a thing it is to look into happiness through another man's eyes!",
+        "id": "9784620626604",
+        "publish_date": "2016-09-03T23:25:47.642545Z",
+        "rating": 4.1,
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": Array [
+        <ForwardRef>
+          <span>
+            4.1
+          </span>
+          <div>
+            <ForwardRef
+              rating={4.1}
+            >
+              ★ ★ ★ ★ ★
+            </ForwardRef>
+          </div>
+        </ForwardRef>,
+        <ForwardRef>
+          <h1>
+            Tatyana Olson
+          </h1>
+          <ForwardRef>
+            How bitter a thing it is to look into happiness through another man's eyes!
+          </ForwardRef>
+          <p>
+            Sat Sep 03 2016
+          </p>
+        </ForwardRef>,
+      ],
+      "onClick": [Function],
+      "role": "link",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": Array [
+            <span>
+              4.1
+            </span>,
+            <div>
+              <ForwardRef
+                rating={4.1}
+              >
+                ★ ★ ★ ★ ★
+              </ForwardRef>
+            </div>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": 4.1,
+            },
+            "ref": null,
+            "rendered": 4.1,
+            "type": "span",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <ForwardRef
+                rating={4.1}
+              >
+                ★ ★ ★ ★ ★
+              </ForwardRef>,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": "★ ★ ★ ★ ★",
+                "rating": 4.1,
+              },
+              "ref": null,
+              "rendered": "★ ★ ★ ★ ★",
+              "type": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-dnqmqq",
+                  "isStatic": false,
+                  "lastClassName": "bjTUMx",
+                  "rules": Array [
+                    "
+  font-size: .9rem;
+  white-space: nowrap;
+  overflow-x: hidden;
+  width: ",
+                    [Function],
+                    " // Calculates the number of stars to show.
+
+  @media only screen and (max-width: 450px) {
+    font-size: .7rem;
+  }
+",
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-dnqmqq",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              },
+            },
+            "type": "div",
+          },
+        ],
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-htoDjs",
+            "isStatic": true,
+            "rules": Array [
+              "
+  display: flex;
+  justify-content: center;
+  align-items: center;
+",
+              "
+  width: 100px;
+  flex-direction: column;
+  font-size: 1.2rem;
+  background-color: whitesmoke;
+  border-radius: .7rem;
+  background-color: rgba(53, 23, 6, 0.5);
+  color: #51c5d4;
+  font-weight: bold;
+  margin-right: 1.5rem;
+
+  span {
+    font-size: 3.2rem;
+  }
+
+
+  @media only screen and (max-width: 450px) {
+    width: 8rem;
+    span {
+      font-size: 2.3rem;
+    }
+  }
+",
+            ],
+          },
+          "displayName": "Styled(styled.div)",
+          "foldedComponentIds": Array [
+            "sc-bdVaJa",
+          ],
+          "render": [Function],
+          "styledComponentId": "sc-htoDjs",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        },
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": Array [
+            <h1>
+              Tatyana Olson
+            </h1>,
+            <ForwardRef>
+              How bitter a thing it is to look into happiness through another man's eyes!
+            </ForwardRef>,
+            <p>
+              Sat Sep 03 2016
+            </p>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Tatyana Olson",
+            },
+            "ref": null,
+            "rendered": "Tatyana Olson",
+            "type": "h1",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": "How bitter a thing it is to look into happiness through another man's eyes!",
+            },
+            "ref": null,
+            "rendered": "How bitter a thing it is to look into happiness through another man's eyes!",
+            "type": Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "sc-gzVnrw",
+                "isStatic": true,
+                "rules": Array [
+                  "
+  font-style: italic;
+",
+                ],
+              },
+              "displayName": "styled.p",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "sc-gzVnrw",
+              "target": "p",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            },
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Sat Sep 03 2016",
+            },
+            "ref": null,
+            "rendered": "Sat Sep 03 2016",
+            "type": "p",
+          },
+        ],
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bZQynM",
+            "isStatic": true,
+            "rules": Array [
+              "
+  display: flex;
+  justify-content: center;
+  align-items: center;
+",
+              "
+  width: 70%;
+  flex-direction: column;
+  align-items: flex-start;
+
+  h1 {
+    width: 100%;
+    font-size: 1.6rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 2.8rem;
+  }
+
+  p {
+    width: 100%;
+    font-size: 1rem;
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.5rem;
+  }
+
+  @media only screen and (max-width: 450px) {
+    width: 65%;
+  }
+",
+            ],
+          },
+          "displayName": "Styled(styled.div)",
+          "foldedComponentIds": Array [
+            "sc-bdVaJa",
+          ],
+          "render": [Function],
+          "styledComponentId": "sc-bZQynM",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        },
+      },
+    ],
+    "type": Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "sc-EHOje",
+        "isStatic": true,
+        "rules": Array [
+          "
+  width: 48%;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 1.5rem;
+  padding: 1.5rem 1rem 1.5rem 1.5rem;
+  border-radius: .5rem;
+  box-shadow: 0 .1rem .2rem .1rem rgba(126, 56, 12, .5);
+  background-color: rgba(254, 197, 107, 0.3);
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(254, 197, 107, 0.5);
+  }
+
+  @media only screen and (max-width: 850px) {
+    width: 96%;
+  }
+",
+        ],
+      },
+      "displayName": "styled.article",
+      "foldedComponentIds": Array [],
+      "render": [Function],
+      "styledComponentId": "sc-EHOje",
+      "target": "article",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    },
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <ForwardRef>
+            <span>
+              4.1
+            </span>
+            <div>
+              <ForwardRef
+                rating={4.1}
+              >
+                ★ ★ ★ ★ ★
+              </ForwardRef>
+            </div>
+          </ForwardRef>,
+          <ForwardRef>
+            <h1>
+              Tatyana Olson
+            </h1>
+            <ForwardRef>
+              How bitter a thing it is to look into happiness through another man's eyes!
+            </ForwardRef>
+            <p>
+              Sat Sep 03 2016
+            </p>
+          </ForwardRef>,
+        ],
+        "onClick": [Function],
+        "role": "link",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": Array [
+              <span>
+                4.1
+              </span>,
+              <div>
+                <ForwardRef
+                  rating={4.1}
+                >
+                  ★ ★ ★ ★ ★
+                </ForwardRef>
+              </div>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": 4.1,
+              },
+              "ref": null,
+              "rendered": 4.1,
+              "type": "span",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <ForwardRef
+                  rating={4.1}
+                >
+                  ★ ★ ★ ★ ★
+                </ForwardRef>,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": "★ ★ ★ ★ ★",
+                  "rating": 4.1,
+                },
+                "ref": null,
+                "rendered": "★ ★ ★ ★ ★",
+                "type": Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-dnqmqq",
+                    "isStatic": false,
+                    "lastClassName": "bjTUMx",
+                    "rules": Array [
+                      "
+  font-size: .9rem;
+  white-space: nowrap;
+  overflow-x: hidden;
+  width: ",
+                      [Function],
+                      " // Calculates the number of stars to show.
+
+  @media only screen and (max-width: 450px) {
+    font-size: .7rem;
+  }
+",
+                    ],
+                  },
+                  "displayName": "styled.div",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-dnqmqq",
+                  "target": "div",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                },
+              },
+              "type": "div",
+            },
+          ],
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-htoDjs",
+              "isStatic": true,
+              "rules": Array [
+                "
+  display: flex;
+  justify-content: center;
+  align-items: center;
+",
+                "
+  width: 100px;
+  flex-direction: column;
+  font-size: 1.2rem;
+  background-color: whitesmoke;
+  border-radius: .7rem;
+  background-color: rgba(53, 23, 6, 0.5);
+  color: #51c5d4;
+  font-weight: bold;
+  margin-right: 1.5rem;
+
+  span {
+    font-size: 3.2rem;
+  }
+
+
+  @media only screen and (max-width: 450px) {
+    width: 8rem;
+    span {
+      font-size: 2.3rem;
+    }
+  }
+",
+              ],
+            },
+            "displayName": "Styled(styled.div)",
+            "foldedComponentIds": Array [
+              "sc-bdVaJa",
+            ],
+            "render": [Function],
+            "styledComponentId": "sc-htoDjs",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          },
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": Array [
+              <h1>
+                Tatyana Olson
+              </h1>,
+              <ForwardRef>
+                How bitter a thing it is to look into happiness through another man's eyes!
+              </ForwardRef>,
+              <p>
+                Sat Sep 03 2016
+              </p>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Tatyana Olson",
+              },
+              "ref": null,
+              "rendered": "Tatyana Olson",
+              "type": "h1",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": "How bitter a thing it is to look into happiness through another man's eyes!",
+              },
+              "ref": null,
+              "rendered": "How bitter a thing it is to look into happiness through another man's eyes!",
+              "type": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-gzVnrw",
+                  "isStatic": true,
+                  "rules": Array [
+                    "
+  font-style: italic;
+",
+                  ],
+                },
+                "displayName": "styled.p",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-gzVnrw",
+                "target": "p",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              },
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Sat Sep 03 2016",
+              },
+              "ref": null,
+              "rendered": "Sat Sep 03 2016",
+              "type": "p",
+            },
+          ],
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-bZQynM",
+              "isStatic": true,
+              "rules": Array [
+                "
+  display: flex;
+  justify-content: center;
+  align-items: center;
+",
+                "
+  width: 70%;
+  flex-direction: column;
+  align-items: flex-start;
+
+  h1 {
+    width: 100%;
+    font-size: 1.6rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 2.8rem;
+  }
+
+  p {
+    width: 100%;
+    font-size: 1rem;
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.5rem;
+  }
+
+  @media only screen and (max-width: 450px) {
+    width: 65%;
+  }
+",
+              ],
+            },
+            "displayName": "Styled(styled.div)",
+            "foldedComponentIds": Array [
+              "sc-bdVaJa",
+            ],
+            "render": [Function],
+            "styledComponentId": "sc-bZQynM",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          },
+        },
+      ],
+      "type": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-EHOje",
+          "isStatic": true,
+          "rules": Array [
+            "
+  width: 48%;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 1.5rem;
+  padding: 1.5rem 1rem 1.5rem 1.5rem;
+  border-radius: .5rem;
+  box-shadow: 0 .1rem .2rem .1rem rgba(126, 56, 12, .5);
+  background-color: rgba(254, 197, 107, 0.3);
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(254, 197, 107, 0.5);
+  }
+
+  @media only screen and (max-width: 850px) {
+    width: 96%;
+  }
+",
+          ],
+        },
+        "displayName": "styled.article",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-EHOje",
+        "target": "article",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      },
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    "disableLifecycleMethods": true,
+  },
+}
+`;
+
+exports[`ReviewList Toolbar matches snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ToolBar />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": <ForwardRef>
+        <ForwardRef
+          aria-label="Previous"
+          flip={true}
+          onClick={[Function]}
+          title="Previous"
+        >
+          ✒
+        </ForwardRef>
+        <ForwardRef
+          htmlFor="search"
+        >
+          Search:
+          <ForwardRef
+            id="search"
+            onChange={[Function]}
+          />
+        </ForwardRef>
+        <ForwardRef>
+          Pg.
+          <ForwardRef
+            aria-label="Page Number"
+          />
+        </ForwardRef>
+        <ForwardRef
+          htmlFor="sort"
+        >
+          Sort By:
+          <ForwardRef
+            id="sort"
+            onChange={[Function]}
+          >
+            <option
+              value="rating"
+            >
+              Rating
+            </option>
+            <option
+              value="author"
+            >
+              Author
+            </option>
+            <option
+              value="publish_date"
+            >
+              Date
+            </option>
+          </ForwardRef>
+          <ForwardRef
+            aria-label="Ascending Order"
+            onClick={[Function]}
+            type={1}
+          >
+            ASC
+          </ForwardRef>
+           /
+          <ForwardRef
+            aria-label="Descending Order"
+            onClick={[Function]}
+            type={0}
+          >
+            DESC
+          </ForwardRef>
+        </ForwardRef>
+        <ForwardRef
+          aria-label="Next"
+          onClick={[Function]}
+          title="Next"
+        >
+          ✒
+        </ForwardRef>
+      </ForwardRef>,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <ForwardRef
+            aria-label="Previous"
+            flip={true}
+            onClick={[Function]}
+            title="Previous"
+          >
+            ✒
+          </ForwardRef>,
+          <ForwardRef
+            htmlFor="search"
+          >
+            Search:
+            <ForwardRef
+              id="search"
+              onChange={[Function]}
+            />
+          </ForwardRef>,
+          <ForwardRef>
+            Pg.
+            <ForwardRef
+              aria-label="Page Number"
+            />
+          </ForwardRef>,
+          <ForwardRef
+            htmlFor="sort"
+          >
+            Sort By:
+            <ForwardRef
+              id="sort"
+              onChange={[Function]}
+            >
+              <option
+                value="rating"
+              >
+                Rating
+              </option>
+              <option
+                value="author"
+              >
+                Author
+              </option>
+              <option
+                value="publish_date"
+              >
+                Date
+              </option>
+            </ForwardRef>
+            <ForwardRef
+              aria-label="Ascending Order"
+              onClick={[Function]}
+              type={1}
+            >
+              ASC
+            </ForwardRef>
+             /
+            <ForwardRef
+              aria-label="Descending Order"
+              onClick={[Function]}
+              type={0}
+            >
+              DESC
+            </ForwardRef>
+          </ForwardRef>,
+          <ForwardRef
+            aria-label="Next"
+            onClick={[Function]}
+            title="Next"
+          >
+            ✒
+          </ForwardRef>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "aria-label": "Previous",
+            "children": "✒",
+            "flip": true,
+            "onClick": [Function],
+            "title": "Previous",
+          },
+          "ref": null,
+          "rendered": "✒",
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-fjdhpX",
+              "isStatic": false,
+              "lastClassName": "kBBdxg",
+              "rules": Array [
+                "
+  border: 0px;
+  background: none;
+  cursor: pointer;
+  font-size: 3rem;
+  font-weight: \\"bold\\";
+  padding-bottom: 7px;
+  &:hover {
+    color: rgb(81, 197, 212);
+  }
+  ",
+                [Function],
+                "
+",
+              ],
+            },
+            "displayName": "styled.button",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-fjdhpX",
+            "target": "button",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          },
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": Array [
+              "Search:",
+              <ForwardRef
+                id="search"
+                onChange={[Function]}
+              />,
+            ],
+            "htmlFor": "search",
+          },
+          "ref": null,
+          "rendered": Array [
+            "Search:",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "id": "search",
+                "onChange": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-gqjmRU",
+                  "isStatic": true,
+                  "lastClassName": "fFdBor",
+                  "rules": Array [
+                    "
+  padding: 5px;
+  border-radius: 5px;
+  margin-left: 10px;
+",
+                  ],
+                },
+                "displayName": "styled.input",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-gqjmRU",
+                "target": "input",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              },
+            },
+          ],
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-cSHVUG",
+              "isStatic": false,
+              "lastClassName": "cFueYe",
+              "rules": Array [
+                "
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: .8rem;
+
+  @media only screen and (max-width: 700px) {
+    display: ",
+                [Function],
+                ";
+  }
+
+  @media only screen and (max-width: 465px) {
+    display: ",
+                [Function],
+                ";
+  }
+",
+              ],
+            },
+            "displayName": "styled.label",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-cSHVUG",
+            "target": "label",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          },
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": Array [
+              "Pg.",
+              <ForwardRef
+                aria-label="Page Number"
+              />,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Pg.",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "aria-label": "Page Number",
+                "children": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-jzJRlG",
+                  "isStatic": true,
+                  "lastClassName": "iwHHiT",
+                  "rules": Array [
+                    "
+  display: flex;
+  justify-content: center;
+  align-items: center;
+",
+                    "
+  font-size: 1rem;
+  font-weight: bold;
+  height: 1.8rem;
+  width: 1.8rem;
+  border-radius: 50%;
+  background-color: rgb(81, 197, 212);
+  margin-left: 10px;
+  user-select: none;
+
+  @media only screen and (max-width: 700px) {
+    font-size: 1.2rem;
+    height: 2rem;
+    width: 2rem;
+  }
+
+  @media only screen and (max-width: 465px) {
+    font-size: 1.5rem;
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+",
+                  ],
+                },
+                "displayName": "Styled(styled.div)",
+                "foldedComponentIds": Array [
+                  "sc-bdVaJa",
+                ],
+                "render": [Function],
+                "styledComponentId": "sc-jzJRlG",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              },
+            },
+          ],
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-cSHVUG",
+              "isStatic": false,
+              "lastClassName": "cFueYe",
+              "rules": Array [
+                "
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: .8rem;
+
+  @media only screen and (max-width: 700px) {
+    display: ",
+                [Function],
+                ";
+  }
+
+  @media only screen and (max-width: 465px) {
+    display: ",
+                [Function],
+                ";
+  }
+",
+              ],
+            },
+            "displayName": "styled.label",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-cSHVUG",
+            "target": "label",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          },
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": Array [
+              "Sort By:",
+              <ForwardRef
+                id="sort"
+                onChange={[Function]}
+              >
+                <option
+                  value="rating"
+                >
+                  Rating
+                </option>
+                <option
+                  value="author"
+                >
+                  Author
+                </option>
+                <option
+                  value="publish_date"
+                >
+                  Date
+                </option>
+              </ForwardRef>,
+              <ForwardRef
+                aria-label="Ascending Order"
+                onClick={[Function]}
+                type={1}
+              >
+                ASC
+              </ForwardRef>,
+              " /",
+              <ForwardRef
+                aria-label="Descending Order"
+                onClick={[Function]}
+                type={0}
+              >
+                DESC
+              </ForwardRef>,
+            ],
+            "htmlFor": "sort",
+          },
+          "ref": null,
+          "rendered": Array [
+            "Sort By:",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": Array [
+                  <option
+                    value="rating"
+                  >
+                    Rating
+                  </option>,
+                  <option
+                    value="author"
+                  >
+                    Author
+                  </option>,
+                  <option
+                    value="publish_date"
+                  >
+                    Date
+                  </option>,
+                ],
+                "id": "sort",
+                "onChange": [Function],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Rating",
+                    "value": "rating",
+                  },
+                  "ref": null,
+                  "rendered": "Rating",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Author",
+                    "value": "author",
+                  },
+                  "ref": null,
+                  "rendered": "Author",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Date",
+                    "value": "publish_date",
+                  },
+                  "ref": null,
+                  "rendered": "Date",
+                  "type": "option",
+                },
+              ],
+              "type": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-VigVT",
+                  "isStatic": true,
+                  "lastClassName": "kXVcxR",
+                  "rules": Array [
+                    "
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+",
+                  ],
+                },
+                "displayName": "styled.select",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-VigVT",
+                "target": "select",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              },
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "aria-label": "Ascending Order",
+                "children": "ASC",
+                "onClick": [Function],
+                "order": undefined,
+                "type": 1,
+              },
+              "ref": null,
+              "rendered": "ASC",
+              "type": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-jTzLTM",
+                  "isStatic": false,
+                  "lastClassName": "PdSmc",
+                  "rules": Array [
+                    "
+  border: 0px;
+  background: none;
+  cursor: pointer;
+  font-weight: ",
+                    [Function],
+                    ";
+",
+                  ],
+                },
+                "displayName": "styled.button",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-jTzLTM",
+                "target": "button",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              },
+            },
+            " /",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "aria-label": "Descending Order",
+                "children": "DESC",
+                "onClick": [Function],
+                "order": undefined,
+                "type": 0,
+              },
+              "ref": null,
+              "rendered": "DESC",
+              "type": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-jTzLTM",
+                  "isStatic": false,
+                  "lastClassName": "PdSmc",
+                  "rules": Array [
+                    "
+  border: 0px;
+  background: none;
+  cursor: pointer;
+  font-weight: ",
+                    [Function],
+                    ";
+",
+                  ],
+                },
+                "displayName": "styled.button",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-jTzLTM",
+                "target": "button",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              },
+            },
+          ],
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-cSHVUG",
+              "isStatic": false,
+              "lastClassName": "cFueYe",
+              "rules": Array [
+                "
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: .8rem;
+
+  @media only screen and (max-width: 700px) {
+    display: ",
+                [Function],
+                ";
+  }
+
+  @media only screen and (max-width: 465px) {
+    display: ",
+                [Function],
+                ";
+  }
+",
+              ],
+            },
+            "displayName": "styled.label",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-cSHVUG",
+            "target": "label",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          },
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "aria-label": "Next",
+            "children": "✒",
+            "onClick": [Function],
+            "title": "Next",
+          },
+          "ref": null,
+          "rendered": "✒",
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-fjdhpX",
+              "isStatic": false,
+              "lastClassName": "kBBdxg",
+              "rules": Array [
+                "
+  border: 0px;
+  background: none;
+  cursor: pointer;
+  font-size: 3rem;
+  font-weight: \\"bold\\";
+  padding-bottom: 7px;
+  &:hover {
+    color: rgb(81, 197, 212);
+  }
+  ",
+                [Function],
+                "
+",
+              ],
+            },
+            "displayName": "styled.button",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-fjdhpX",
+            "target": "button",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          },
+        },
+      ],
+      "type": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-gZMcBi",
+          "isStatic": true,
+          "lastClassName": "hNrrtM",
+          "rules": Array [
+            "
+  display: flex;
+  justify-content: center;
+  align-items: center;
+",
+            "
+  width: 100%;
+  max-width: 1080px;
+  height: 4rem;
+  background-color: white;
+  border-radius: 10px;
+  padding: 0 10px;
+  justify-content: space-between;
+  background-color: whitesmoke;
+",
+          ],
+        },
+        "displayName": "Styled(styled.div)",
+        "foldedComponentIds": Array [
+          "sc-bdVaJa",
+        ],
+        "render": [Function],
+        "styledComponentId": "sc-gZMcBi",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      },
+    },
+    "type": Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "sc-iwsKbI",
+        "isStatic": true,
+        "lastClassName": "iglYZu",
+        "rules": Array [
+          "
+  display: flex;
+  justify-content: center;
+  align-items: center;
+",
+          "
+  position: sticky;
+  top: 1.5rem;
+  margin: 15px 0;
+  width: 100%;
+  max-width: 1080px;
+  padding: 0 10px;
+",
+        ],
+      },
+      "displayName": "Styled(styled.div)",
+      "foldedComponentIds": Array [
+        "sc-bdVaJa",
+      ],
+      "render": [Function],
+      "styledComponentId": "sc-iwsKbI",
+      "target": "div",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    },
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": <ForwardRef>
+          <ForwardRef
+            aria-label="Previous"
+            flip={true}
+            onClick={[Function]}
+            title="Previous"
+          >
+            ✒
+          </ForwardRef>
+          <ForwardRef
+            htmlFor="search"
+          >
+            Search:
+            <ForwardRef
+              id="search"
+              onChange={[Function]}
+            />
+          </ForwardRef>
+          <ForwardRef>
+            Pg.
+            <ForwardRef
+              aria-label="Page Number"
+            />
+          </ForwardRef>
+          <ForwardRef
+            htmlFor="sort"
+          >
+            Sort By:
+            <ForwardRef
+              id="sort"
+              onChange={[Function]}
+            >
+              <option
+                value="rating"
+              >
+                Rating
+              </option>
+              <option
+                value="author"
+              >
+                Author
+              </option>
+              <option
+                value="publish_date"
+              >
+                Date
+              </option>
+            </ForwardRef>
+            <ForwardRef
+              aria-label="Ascending Order"
+              onClick={[Function]}
+              type={1}
+            >
+              ASC
+            </ForwardRef>
+             /
+            <ForwardRef
+              aria-label="Descending Order"
+              onClick={[Function]}
+              type={0}
+            >
+              DESC
+            </ForwardRef>
+          </ForwardRef>
+          <ForwardRef
+            aria-label="Next"
+            onClick={[Function]}
+            title="Next"
+          >
+            ✒
+          </ForwardRef>
+        </ForwardRef>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": Array [
+            <ForwardRef
+              aria-label="Previous"
+              flip={true}
+              onClick={[Function]}
+              title="Previous"
+            >
+              ✒
+            </ForwardRef>,
+            <ForwardRef
+              htmlFor="search"
+            >
+              Search:
+              <ForwardRef
+                id="search"
+                onChange={[Function]}
+              />
+            </ForwardRef>,
+            <ForwardRef>
+              Pg.
+              <ForwardRef
+                aria-label="Page Number"
+              />
+            </ForwardRef>,
+            <ForwardRef
+              htmlFor="sort"
+            >
+              Sort By:
+              <ForwardRef
+                id="sort"
+                onChange={[Function]}
+              >
+                <option
+                  value="rating"
+                >
+                  Rating
+                </option>
+                <option
+                  value="author"
+                >
+                  Author
+                </option>
+                <option
+                  value="publish_date"
+                >
+                  Date
+                </option>
+              </ForwardRef>
+              <ForwardRef
+                aria-label="Ascending Order"
+                onClick={[Function]}
+                type={1}
+              >
+                ASC
+              </ForwardRef>
+               /
+              <ForwardRef
+                aria-label="Descending Order"
+                onClick={[Function]}
+                type={0}
+              >
+                DESC
+              </ForwardRef>
+            </ForwardRef>,
+            <ForwardRef
+              aria-label="Next"
+              onClick={[Function]}
+              title="Next"
+            >
+              ✒
+            </ForwardRef>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "aria-label": "Previous",
+              "children": "✒",
+              "flip": true,
+              "onClick": [Function],
+              "title": "Previous",
+            },
+            "ref": null,
+            "rendered": "✒",
+            "type": Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "sc-fjdhpX",
+                "isStatic": false,
+                "lastClassName": "kBBdxg",
+                "rules": Array [
+                  "
+  border: 0px;
+  background: none;
+  cursor: pointer;
+  font-size: 3rem;
+  font-weight: \\"bold\\";
+  padding-bottom: 7px;
+  &:hover {
+    color: rgb(81, 197, 212);
+  }
+  ",
+                  [Function],
+                  "
+",
+                ],
+              },
+              "displayName": "styled.button",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "sc-fjdhpX",
+              "target": "button",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            },
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": Array [
+                "Search:",
+                <ForwardRef
+                  id="search"
+                  onChange={[Function]}
+                />,
+              ],
+              "htmlFor": "search",
+            },
+            "ref": null,
+            "rendered": Array [
+              "Search:",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "id": "search",
+                  "onChange": [Function],
+                },
+                "ref": null,
+                "rendered": null,
+                "type": Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-gqjmRU",
+                    "isStatic": true,
+                    "lastClassName": "fFdBor",
+                    "rules": Array [
+                      "
+  padding: 5px;
+  border-radius: 5px;
+  margin-left: 10px;
+",
+                    ],
+                  },
+                  "displayName": "styled.input",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-gqjmRU",
+                  "target": "input",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                },
+              },
+            ],
+            "type": Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "sc-cSHVUG",
+                "isStatic": false,
+                "lastClassName": "cFueYe",
+                "rules": Array [
+                  "
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: .8rem;
+
+  @media only screen and (max-width: 700px) {
+    display: ",
+                  [Function],
+                  ";
+  }
+
+  @media only screen and (max-width: 465px) {
+    display: ",
+                  [Function],
+                  ";
+  }
+",
+                ],
+              },
+              "displayName": "styled.label",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "sc-cSHVUG",
+              "target": "label",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            },
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": Array [
+                "Pg.",
+                <ForwardRef
+                  aria-label="Page Number"
+                />,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              "Pg.",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "aria-label": "Page Number",
+                  "children": undefined,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-jzJRlG",
+                    "isStatic": true,
+                    "lastClassName": "iwHHiT",
+                    "rules": Array [
+                      "
+  display: flex;
+  justify-content: center;
+  align-items: center;
+",
+                      "
+  font-size: 1rem;
+  font-weight: bold;
+  height: 1.8rem;
+  width: 1.8rem;
+  border-radius: 50%;
+  background-color: rgb(81, 197, 212);
+  margin-left: 10px;
+  user-select: none;
+
+  @media only screen and (max-width: 700px) {
+    font-size: 1.2rem;
+    height: 2rem;
+    width: 2rem;
+  }
+
+  @media only screen and (max-width: 465px) {
+    font-size: 1.5rem;
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+",
+                    ],
+                  },
+                  "displayName": "Styled(styled.div)",
+                  "foldedComponentIds": Array [
+                    "sc-bdVaJa",
+                  ],
+                  "render": [Function],
+                  "styledComponentId": "sc-jzJRlG",
+                  "target": "div",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                },
+              },
+            ],
+            "type": Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "sc-cSHVUG",
+                "isStatic": false,
+                "lastClassName": "cFueYe",
+                "rules": Array [
+                  "
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: .8rem;
+
+  @media only screen and (max-width: 700px) {
+    display: ",
+                  [Function],
+                  ";
+  }
+
+  @media only screen and (max-width: 465px) {
+    display: ",
+                  [Function],
+                  ";
+  }
+",
+                ],
+              },
+              "displayName": "styled.label",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "sc-cSHVUG",
+              "target": "label",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            },
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": Array [
+                "Sort By:",
+                <ForwardRef
+                  id="sort"
+                  onChange={[Function]}
+                >
+                  <option
+                    value="rating"
+                  >
+                    Rating
+                  </option>
+                  <option
+                    value="author"
+                  >
+                    Author
+                  </option>
+                  <option
+                    value="publish_date"
+                  >
+                    Date
+                  </option>
+                </ForwardRef>,
+                <ForwardRef
+                  aria-label="Ascending Order"
+                  onClick={[Function]}
+                  type={1}
+                >
+                  ASC
+                </ForwardRef>,
+                " /",
+                <ForwardRef
+                  aria-label="Descending Order"
+                  onClick={[Function]}
+                  type={0}
+                >
+                  DESC
+                </ForwardRef>,
+              ],
+              "htmlFor": "sort",
+            },
+            "ref": null,
+            "rendered": Array [
+              "Sort By:",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": Array [
+                    <option
+                      value="rating"
+                    >
+                      Rating
+                    </option>,
+                    <option
+                      value="author"
+                    >
+                      Author
+                    </option>,
+                    <option
+                      value="publish_date"
+                    >
+                      Date
+                    </option>,
+                  ],
+                  "id": "sort",
+                  "onChange": [Function],
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Rating",
+                      "value": "rating",
+                    },
+                    "ref": null,
+                    "rendered": "Rating",
+                    "type": "option",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Author",
+                      "value": "author",
+                    },
+                    "ref": null,
+                    "rendered": "Author",
+                    "type": "option",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Date",
+                      "value": "publish_date",
+                    },
+                    "ref": null,
+                    "rendered": "Date",
+                    "type": "option",
+                  },
+                ],
+                "type": Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-VigVT",
+                    "isStatic": true,
+                    "lastClassName": "kXVcxR",
+                    "rules": Array [
+                      "
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+",
+                    ],
+                  },
+                  "displayName": "styled.select",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-VigVT",
+                  "target": "select",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                },
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "aria-label": "Ascending Order",
+                  "children": "ASC",
+                  "onClick": [Function],
+                  "order": undefined,
+                  "type": 1,
+                },
+                "ref": null,
+                "rendered": "ASC",
+                "type": Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-jTzLTM",
+                    "isStatic": false,
+                    "lastClassName": "PdSmc",
+                    "rules": Array [
+                      "
+  border: 0px;
+  background: none;
+  cursor: pointer;
+  font-weight: ",
+                      [Function],
+                      ";
+",
+                    ],
+                  },
+                  "displayName": "styled.button",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-jTzLTM",
+                  "target": "button",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                },
+              },
+              " /",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "aria-label": "Descending Order",
+                  "children": "DESC",
+                  "onClick": [Function],
+                  "order": undefined,
+                  "type": 0,
+                },
+                "ref": null,
+                "rendered": "DESC",
+                "type": Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-jTzLTM",
+                    "isStatic": false,
+                    "lastClassName": "PdSmc",
+                    "rules": Array [
+                      "
+  border: 0px;
+  background: none;
+  cursor: pointer;
+  font-weight: ",
+                      [Function],
+                      ";
+",
+                    ],
+                  },
+                  "displayName": "styled.button",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-jTzLTM",
+                  "target": "button",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                },
+              },
+            ],
+            "type": Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "sc-cSHVUG",
+                "isStatic": false,
+                "lastClassName": "cFueYe",
+                "rules": Array [
+                  "
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: .8rem;
+
+  @media only screen and (max-width: 700px) {
+    display: ",
+                  [Function],
+                  ";
+  }
+
+  @media only screen and (max-width: 465px) {
+    display: ",
+                  [Function],
+                  ";
+  }
+",
+                ],
+              },
+              "displayName": "styled.label",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "sc-cSHVUG",
+              "target": "label",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            },
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "aria-label": "Next",
+              "children": "✒",
+              "onClick": [Function],
+              "title": "Next",
+            },
+            "ref": null,
+            "rendered": "✒",
+            "type": Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "sc-fjdhpX",
+                "isStatic": false,
+                "lastClassName": "kBBdxg",
+                "rules": Array [
+                  "
+  border: 0px;
+  background: none;
+  cursor: pointer;
+  font-size: 3rem;
+  font-weight: \\"bold\\";
+  padding-bottom: 7px;
+  &:hover {
+    color: rgb(81, 197, 212);
+  }
+  ",
+                  [Function],
+                  "
+",
+                ],
+              },
+              "displayName": "styled.button",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "sc-fjdhpX",
+              "target": "button",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            },
+          },
+        ],
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-gZMcBi",
+            "isStatic": true,
+            "lastClassName": "hNrrtM",
+            "rules": Array [
+              "
+  display: flex;
+  justify-content: center;
+  align-items: center;
+",
+              "
+  width: 100%;
+  max-width: 1080px;
+  height: 4rem;
+  background-color: white;
+  border-radius: 10px;
+  padding: 0 10px;
+  justify-content: space-between;
+  background-color: whitesmoke;
+",
+            ],
+          },
+          "displayName": "Styled(styled.div)",
+          "foldedComponentIds": Array [
+            "sc-bdVaJa",
+          ],
+          "render": [Function],
+          "styledComponentId": "sc-gZMcBi",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        },
+      },
+      "type": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-iwsKbI",
+          "isStatic": true,
+          "lastClassName": "iglYZu",
+          "rules": Array [
+            "
+  display: flex;
+  justify-content: center;
+  align-items: center;
+",
+            "
+  position: sticky;
+  top: 1.5rem;
+  margin: 15px 0;
+  width: 100%;
+  max-width: 1080px;
+  padding: 0 10px;
+",
+          ],
+        },
+        "displayName": "Styled(styled.div)",
+        "foldedComponentIds": Array [
+          "sc-bdVaJa",
+        ],
+        "render": [Function],
+        "styledComponentId": "sc-iwsKbI",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      },
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    "disableLifecycleMethods": true,
+  },
+}
+`;
+
+exports[`ReviewList matches snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ReviewList />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": Array [
+        <ToolBar
+          order={[Function]}
+          page={1}
+          search={[Function]}
+          setPage={[Function]}
+          size={0}
+          sort={[Function]}
+          sortOrder={0}
+        />,
+        <List
+          page={1}
+          searchTerm=""
+          setSize={[Function]}
+          sortBy="rating"
+          sortOrder={0}
+        />,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "order": [Function],
+          "page": 1,
+          "search": [Function],
+          "setPage": [Function],
+          "size": 0,
+          "sort": [Function],
+          "sortOrder": 0,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "page": 1,
+          "searchTerm": "",
+          "setSize": [Function],
+          "sortBy": "rating",
+          "sortOrder": 0,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "sc-bxivhb",
+        "isStatic": true,
+        "lastClassName": "dTphmB",
+        "rules": Array [
+          "
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+",
+        ],
+      },
+      "displayName": "styled.section",
+      "foldedComponentIds": Array [],
+      "render": [Function],
+      "styledComponentId": "sc-bxivhb",
+      "target": "section",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    },
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <ToolBar
+            order={[Function]}
+            page={1}
+            search={[Function]}
+            setPage={[Function]}
+            size={0}
+            sort={[Function]}
+            sortOrder={0}
+          />,
+          <List
+            page={1}
+            searchTerm=""
+            setSize={[Function]}
+            sortBy="rating"
+            sortOrder={0}
+          />,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "order": [Function],
+            "page": 1,
+            "search": [Function],
+            "setPage": [Function],
+            "size": 0,
+            "sort": [Function],
+            "sortOrder": 0,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "page": 1,
+            "searchTerm": "",
+            "setSize": [Function],
+            "sortBy": "rating",
+            "sortOrder": 0,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-bxivhb",
+          "isStatic": true,
+          "lastClassName": "dTphmB",
+          "rules": Array [
+            "
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+",
+          ],
+        },
+        "displayName": "styled.section",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-bxivhb",
+        "target": "section",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      },
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    "disableLifecycleMethods": true,
+  },
+}
+`;
