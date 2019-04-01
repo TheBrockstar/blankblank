@@ -32,6 +32,11 @@ export const Card = styled.article`
   border-radius: .5rem;
   box-shadow: 0 .1rem .2rem .1rem rgba(126, 56, 12, .5);
   background-color: rgba(254, 197, 107, 0.3);
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(254, 197, 107, 0.5);
+  }
 
   @media only screen and (max-width: 850px) {
     width: 96%;
@@ -163,11 +168,12 @@ export const PageButton = styled.button`
 export const PageNumber = styled(flexContainer)`
   font-size: 1rem;
   font-weight: bold;
-  height: 1.5rem;
-  width: 1.5rem;
+  height: 1.8rem;
+  width: 1.8rem;
   border-radius: 50%;
   background-color: rgb(81, 197, 212);
   margin-left: 10px;
+  user-select: none;
 
   @media only screen and (max-width: 700px) {
     font-size: 1.2rem;
@@ -193,7 +199,7 @@ export const StyledLabel = styled.label`
   }
 
   @media only screen and (max-width: 465px) {
-    display: ${props => props.htmlFor === "search" || props.for === "sort" ? "none" : "flex" };
+    display: ${props => props.htmlFor === "search" || props.htmlFor === "sort" ? "none" : "flex" };
   }
 `
 

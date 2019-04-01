@@ -11,7 +11,7 @@ const View = _ => {
       <ViewWrapper>
           <Router>
             <Switch>
-              <Route exact path="/" component={ReviewList}/>
+              <Route exact path="/" render={props => <ReviewList { ...props } />}/>
               <Route path="/review/:id" render={props => (<ReviewPage  { ...props }/>)}/>
               <Route path="/" render={_ => 
                 (<NotFound404>404 - Not Found <br/> Get Thee Hence!</NotFound404>)}

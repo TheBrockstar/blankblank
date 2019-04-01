@@ -68,21 +68,18 @@ export const Stars = styled.div`
 `;
 
 export const ReturnToList = styled.button`
-  width: 50%;
-  border: none;
-  background: none;
-  cursor: pointer;
+  align-self: center;
+  background-color: rgba(254,197,107,0.3);
+  box-shadow: 0 .1rem .2rem .1rem rgba(126,56,12,.5);
   margin-top: 60px;
+  padding: 10px 15px;
+  border: 0px;
+  border-radius: 10px;
   font-size: 1.5rem;
   color: rgb(53, 23, 6);
-  align-self: center;
-  border: 5px solid rgba(53, 23, 6, 0.5);
-  border-radius: 10px;
-  padding: 10px 0;
+  cursor: pointer;
 
   &:hover {
-    background-color: rgb(81,197,212);
-    color: whitesmoke;
-    border: 5px solid rgb(105,68,37);
+    background-color: rgba(254,197,107,0.5);
   }
 `

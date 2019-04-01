@@ -45,7 +45,7 @@ function ReviewPage(props) {
           <Author>{ review.author }</Author>
           <Quote>“{ review.body }”</Quote>
           <ReviewDate>Reviewed On: { (new Date(review.publish_date)).toDateString() }</ReviewDate>
-          <ReturnToList onClick={_ => props.history.push('/')}>Return to Full List</ReturnToList>
+          <ReturnToList aria-role={'link'} onClick={_ => props.history.push('/')}>Return to Full List</ReturnToList>
         </ReviewContainer>
       );
     } else {

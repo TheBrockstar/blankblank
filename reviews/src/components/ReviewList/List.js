@@ -8,6 +8,9 @@ import { Loading, NotFound404 } from '../../globalStyles/Styles'
 import ReviewCard from './ReviewCard';
 
 function List(props) {
+
+  console.log(props);
+
   const [reviews, setReviews] = useState(null);
 
   useEffect(() => {
@@ -17,7 +20,8 @@ function List(props) {
       'https://shakespeare.podium.com/api/reviews', 
       { 'headers': { 'x-api-key':'H3TM28wjL8R4#HTnqk?c' }}
       );
-  
+        
+      props.setSize(Math.ceil((response.data.length) / 20))
       setReviews(response.data);
     } catch (error) {
       setReviews('404');
@@ -29,9 +33,9 @@ function List(props) {
 
   if (reviews) {
     return reviews === '404' ? (<NotFound404>404 - Not Found <br/> Get Thee Hence!</NotFound404>) : (
-      <ListWrapper>
+      <ListWrapper aria-role={'list'}>
         {paginateReviews(sortReviews(searchReviews(reviews, props.searchTerm), props.sortBy, props.sortOrder), props.page, 20).map(review => {
-          return (<ReviewCard key={review.id} review={review}/>)
+          return (<ReviewCard history={props.history} key={review.id} review={review}/>)
         })}
       </ListWrapper>
     )
