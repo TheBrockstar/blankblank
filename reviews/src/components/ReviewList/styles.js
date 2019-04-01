@@ -124,17 +124,20 @@ export const ToolBarWrapper =  styled(flexContainer)`
   border-radius: 10px;
   padding: 0 10px;
   justify-content: space-between;
+  background-color: whitesmoke;
 `;
 
 export const StyledInput = styled.input`
   padding: 5px;
   border-radius: 5px;
+  margin-left: 10px;
 `
 
 export const StyledSelect = styled.select`
   padding: 5px;
   border-radius: 5px;
   cursor: pointer;
+  margin-left: 10px;
 `
 
 export const SortButton = styled.button`
@@ -159,5 +162,17 @@ export const PageButton = styled.button`
 
 export const PageNumber = styled(flexContainer)`
   font-size: 1rem;
-  padding: 10px
+  font-weight: bold;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
+  background-color: rgb(81, 197, 212);
+  margin-left: 10px;
+`
+
+export const StyledLabel = styled.label`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: .8rem;
 `

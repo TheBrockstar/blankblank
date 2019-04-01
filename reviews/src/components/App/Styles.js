@@ -43,7 +43,8 @@ export const StyledFooter = styled.footer `
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-color: rgb(234, 168, 58);
+  background-color: rgb(81, 197, 212);
+  border-top: 5px solid rgb(105, 68, 37);
   margin-top: 15px;
 
   h1 {
