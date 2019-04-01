@@ -7,7 +7,7 @@ import ToolBar from './ToolBar';
 
 function ReviewList() {
   const [searchTerm, setSearch] = useState("");
-  const [sortBy, setSort] = useState("author");
+  const [sortBy, setSort] = useState("rating");
   const [sortOrder, setOrder] = useState(0);
   const [page, setPage] = useState(1);
 

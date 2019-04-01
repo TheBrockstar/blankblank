@@ -113,11 +113,17 @@ export const Stars = styled.div`
 
 
 // Toolbar Components
-export const ToolBarWrapper =  styled(flexContainer)`
+export const ToolBarContainer = styled(flexContainer)`
   position: sticky;
   top: 1.5rem;
   margin: 15px 0;
-  width: 80%;
+  width: 100%;
+  max-width: 1080px;
+  padding: 0 10px;
+`
+
+export const ToolBarWrapper =  styled(flexContainer)`
+  width: 100%;
   max-width: 1080px;
   height: 4rem;
   background-color: white;
@@ -168,6 +174,18 @@ export const PageNumber = styled(flexContainer)`
   border-radius: 50%;
   background-color: rgb(81, 197, 212);
   margin-left: 10px;
+
+  @media only screen and (max-width: 700px) {
+    font-size: 1.2rem;
+    height: 2rem;
+    width: 2rem;
+  }
+
+  @media only screen and (max-width: 465px) {
+    font-size: 1.5rem;
+    height: 2.5rem;
+    width: 2.5rem;
+  }
 `
 
 export const StyledLabel = styled.label`
@@ -175,4 +193,16 @@ export const StyledLabel = styled.label`
   justify-content: center;
   align-items: center;
   font-size: .8rem;
+
+  @media only screen and (max-width: 700px) {
+    display: ${props => props.for === "sort" ? "none" : "flex" };
+  }
+
+  @media only screen and (max-width: 465px) {
+    display: ${props => props.for === "search" || props.for === "sort" ? "none" : "flex" };
+  }
+`
+
+export const mobileSearch = styled.button`
+
 `
