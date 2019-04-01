@@ -5,7 +5,7 @@
 export const searchReviews = (reviews, term)  => {
   if (term.trim().length >= 3) {
     return reviews.filter(item => (item.body + " " + item.author).toLowerCase().includes(term.toLowerCase()));
-  } else {
+  } else { 
     return reviews;
   }
 }
@@ -35,4 +35,20 @@ export const sortReviews = (reviews, key, asc = 0) => {
   })
 
   return asc ? sorted.reverse() : sorted;
+} 
+
+// Simulate pagination of a list of reviews by returning a slice
+// of the list based on the page number and an optional reviews/page
+export const paginateReviews = (reviews, page, num = 10) => {
+  // Ensure num is greater than 0
+  if (num < 1) num = 1;
+
+  // Ensure page is within range
+  if (page < 1) {
+    page = 1;
+  } else if (page > Math.ceil(reviews.length / num)) {
+    page = Math.ceil(reviews.length / num);
+  }
+
+  return reviews.slice((page - 1) * num, page * num)
 } 

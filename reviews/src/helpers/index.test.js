@@ -1,4 +1,4 @@
-import { searchReviews, sortReviews } from './index';
+import { searchReviews, sortReviews, paginateReviews } from './index';
 
 const mockReview1 = {
   rating: "4.2",
@@ -70,21 +70,22 @@ describe('sortReviews', () => {
     const sortByAuthor = [mockReview2, mockReview2, mockReview1, mockReview1, mockReview1, mockReview3];
     const sortByDate = [mockReview2, mockReview2, mockReview1, mockReview1, mockReview1, mockReview3];
 
-    describe('and a key `rating`', () => {
+  describe('and a key:', () => {
+    describe('`rating`', () => {
       it('returns an array sorted in descending order by `rating`', () => {
         const result = sortReviews(mockList, "rating");
         expect(JSON.stringify(result)).toEqual(JSON.stringify(sortByRating));
       });
     });
 
-    describe('and a key `author`', () => {
+    describe('`author`', () => {
       it('returns an array sorted in descending order by `author`', () => {
         const result = sortReviews(mockList, "author");
         expect(JSON.stringify(result)).toEqual(JSON.stringify(sortByAuthor));
       });
     });
 
-    describe('and a key `publish_date`', () => {
+    describe('`publish_date`', () => {
       it('returns an array sorted in descending order by `publish_date`', () => {
         const result = sortReviews(mockList, "publish_date");
         expect(JSON.stringify(result)).toEqual(JSON.stringify(sortByDate));
@@ -92,10 +93,76 @@ describe('sortReviews', () => {
     });
 
 
-    describe('and a valid key and a third operator of 1', () => {
+    describe('and a third operator of `1`', () => {
       it('returns an array sorted in ascending order by the given key', () => {
         const result = sortReviews(mockList, "publish_date", 1);
         expect(JSON.stringify(result)).toEqual(JSON.stringify(sortByDate.reverse()));
+      });
+    });
+  });
+});
+});
+
+describe('paginateReviews', () => {
+
+  describe('given an empty array', () => { 
+    it('returns an empty array', () => {
+      expect(paginateReviews([], 2)).toEqual([]);
+    });
+  });
+
+  describe('given an array of reviews', () => {
+
+    const mockList = [mockReview1, mockReview2, mockReview3, mockReview2, mockReview1, mockReview1];
+    const page02By03 = [mockReview3, mockReview2, mockReview2, mockReview1, mockReview1, mockReview1];
+    const page03By02 = [mockReview2, mockReview2, mockReview1, mockReview1, mockReview1, mockReview3];
+    const page5By10 = [mockReview2, mockReview2, mockReview1, mockReview1, mockReview1, mockReview3];
+
+    describe('and a page of:', () => { 
+      describe('less than 1', () => {
+        it('returns the first page of reviews', () => {
+          const result = paginateReviews(mockList, -99, 2);
+          expect(JSON.stringify(result)).toEqual(JSON.stringify([mockReview1, mockReview2]));
+        });
+      });
+  
+      describe('greater than the max possible', () => {
+        it('returns the last page of reviews', () => {
+          const result = paginateReviews(mockList, 99, 2);
+          expect(JSON.stringify(result)).toEqual(JSON.stringify([mockReview1, mockReview1]));
+        });
+      });
+
+      describe('equal to 2', () => {
+        it('returns the second page of reviews', () => {
+          const result = paginateReviews(mockList, 2, 2);
+          expect(JSON.stringify(result)).toEqual(JSON.stringify([mockReview3, mockReview2]));
+        });
+      });
+    });
+
+
+    describe('and a number of items per page:', () => {
+
+      describe('greater than the total number of numbers', () => {
+        it('returns entire array', () => {
+        const result = paginateReviews(mockList, 1, 99);
+        expect(JSON.stringify(result)).toEqual(JSON.stringify(mockList));
+        });
+      });
+
+      describe('less than 1', () => {
+        it('returns one item', () => {
+        const result = paginateReviews(mockList, 1, -99);
+        expect(JSON.stringify(result)).toEqual(JSON.stringify([mockReview1]));
+        });
+      });
+
+      describe('equal to 3 than 1', () => {
+        it('returns three items', () => {
+        const result = paginateReviews(mockList, 2, 3);
+        expect(JSON.stringify(result)).toEqual(JSON.stringify([mockReview2, mockReview1, mockReview1]));
+        });
       });
     });
   });
