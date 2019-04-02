@@ -19,7 +19,7 @@ function List(props) {
       { 'headers': { 'x-api-key':'H3TM28wjL8R4#HTnqk?c' }}
       );
         
-      props.setSize(Math.ceil((response.data.length) / 20))
+      props.setSize(Math.ceil((response.data.length) / 20));
       setReviews(response.data);
     } catch (error) {
       setReviews('404');

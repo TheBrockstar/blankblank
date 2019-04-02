@@ -100,7 +100,7 @@ export const ReviewDate = styled.p`
 export const Stars = styled.div`
   font-size: 1.5rem;
   white-space: nowrap;
-  overflow-x: hidden;
+  overflow: hidden;
   width: ${props => ((props.rating / 5) * 100) + "%"} // Calculates the number of stars to show.
 
   @media only screen and (max-width: 650px) {

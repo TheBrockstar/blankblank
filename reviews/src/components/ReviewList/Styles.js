@@ -102,7 +102,7 @@ export const CardRating = styled(flexContainer)`
 export const Stars = styled.div`
   font-size: .9rem;
   white-space: nowrap;
-  overflow-x: hidden;
+  overflow: hidden;
   width: ${props => ((props.rating / 5) * 100) + "%"} // Calculates the number of stars to show.
 
   @media only screen and (max-width: 450px) {

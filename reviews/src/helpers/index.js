@@ -21,10 +21,10 @@ export const sortReviews = (reviews, key, asc = 0) => {
   }
 
   // Check if it's a date or a number
-  if (Date.parse(sorted[0][key])) {
-    sorted.forEach(review => {review[key] = new Date(review[key])});
+  if (key === "publish_date") {
+    sorted.forEach(review => {review[key] = new Date(review[key])}); 
   } else if (Number(sorted[0][key])) {
-    sorted.forEach(review => {review[key] = parseFloat(review[key], 10)});
+    sorted.forEach(review => {review[key] = parseFloat(review[key])});
   } else {
     sorted.forEach(review => {review[key] = review[key].toLowerCase()});
   }
